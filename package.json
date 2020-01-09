@@ -28,7 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "http://hoyeongrande.github.io/nomflix",
+  "homepage": "https://epic-davinci-c120d5.netlify.com",
   "browserslist": {
     "production": [
       ">0.2%",
