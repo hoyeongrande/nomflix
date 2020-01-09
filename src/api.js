@@ -1,17 +1,12 @@
 import axios from "axios";
 
-const TvPopularParams = {
-  api_key: "cd1e54cfadf79c43cfd841c57ab5dc62",
-  language: "en-US"
-};
-
 const api = axios.create({
-  baseURL: "https://api.themoviedb.org/3/"
+  baseURL: "https://api.themoviedb.org/3/",
+  params: {
+    api_key: "cd1e54cfadf79c43cfd841c57ab5dc62",
+    language: "en-US"
+  }
 });
-
-const getMovie = async () =>
-  await api.get("tv/popular", { params: TvPopularParams });
-getMovie();
 
 export const moviesApi = {
   nowPlaying: () => api.get("movie/now_playing"),
